@@ -1,0 +1,829 @@
+@charset "utf-8";
+
+body{
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 2;
+	font-size: 16px;
+}
+
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+/* main*/
+
+.main{
+	background-image: url(../img/mainbg.png);
+	background-size: cover;
+	background-position: center;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: #fff;
+}
+
+.main__text{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%,-50%,0);
+	color: #fff;
+}
+
+.site-title{
+	font-size: 48px;
+	font-weight: bold;
+	margin: 0 0 40px;
+}
+
+.site-subtitle{
+	font-size: 36px;
+}
+
+/* header*/
+
+.hamburger-menu{
+	display: none;
+}
+
+.wrapper{
+	max-width: 960px;
+	margin: auto;
+}
+
+
+.header__wrapper2{
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+	height: 80px;
+	align-items: center;
+}
+
+.header{
+	background-color: #efefef;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav__list{
+	display: flex;
+}
+
+.nav-item{
+	font-size: 21px;
+	margin: 24px;
+}
+
+.nav-item>a{
+	color: darkgray;
+	text-transform: uppercase;
+}
+
+/* about*/
+.profile-wrapper{
+	max-width: 960px;
+	margin: auto;
+	padding: 120px 0 0 0;
+}
+
+
+.profile__title{
+	margin: 0 0 24px;
+	font-size: 24px;
+	font-weight: bold;
+	color: #ffd61a;
+}
+
+.profile__subtitle{
+	margin: 0 0 64px;
+}
+
+.profile__detail{
+	padding: 40px 0 20px 0;
+}
+
+.profile__detail2{
+	padding: 20px 0 80px 0;
+
+}
+
+.profile__eyectach {
+	margin: 0 0 64px;
+    display: flex;
+    width: 100vw;
+    height: 200px;
+    overflow: hidden;
+}
+
+.profile__eyectach img {
+        width: auto;
+        height: 100%;
+}
+
+.profile__eyectach img:first-child {
+            animation: slide1 50s -25s linear infinite;
+        }
+
+.profile__eyectach img:last-child {
+            animation: slide2 50s linear infinite;
+        }
+
+
+@keyframes slide1 {
+  0% {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slide2 {
+  0% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
+
+
+
+/* course*/
+
+.course-wrapper{
+	padding: 64px 0 0 0;
+}
+
+.wrapper-course{
+	max-width: 1200px;
+	margin: auto;
+}
+
+.course-item1{
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	background-color: #fafafa;
+}
+
+.course-item-img,.course-article{
+	width: 50%;
+}
+
+.course-item2{
+	display: flex;
+	flex-direction: row-reverse;
+	position: relative;
+	background-color: #fafafa;
+}
+
+.course-article{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(0,-50%,0);
+	width: 100%;
+}
+
+.course-article2{
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	transform: translate3d(0,-50%,0);
+	width: 100%;
+}
+
+.course__item{
+	padding-left: 48px;
+	max-width: 40%;
+}
+
+
+
+.course__detail{
+	margin: 24px 0 64px 0;
+}
+
+.course__merit{
+	font-size: 24px;
+	color: #222222;
+	margin: 0 0 40px;
+}
+
+.course__epilogue{
+	margin: 0 0 64px;
+}
+
+
+/* news*/
+
+.btn{
+	display: block;
+	background-color: #ffd61a;
+	color: #fff;
+	font-size: 21px;
+	width: 300px;
+	margin: auto;
+	padding: 19.5px 0;
+}
+
+.news-title{
+	color: #ffd61a;
+}
+
+.news__contents{
+	padding: 0 16px;
+}
+
+
+.news__subtitle{
+	margin: 0 0 64px;
+}
+
+.news__eyectach{
+	margin: 0 0 32px;
+}
+
+.news__date{
+	margin: 0 0 24px;
+}
+
+.news__flash{
+	display: flex;
+	margin: 0 0 56px;
+}
+
+.article{
+	padding: 64px 0 48px;
+}
+
+/*access*/
+.access-wrapper{
+	max-width: 960px;
+	margin: auto;
+}
+
+.map{
+	padding: 64px 0 80px;
+	background-color: #fafafa;
+}
+
+.access__subtitle{
+	margin: 0 0 24px;
+}
+
+.access__company{
+	margin: 0 0 64px
+}
+
+.accese__detail{
+	margin: 64px 0 0 24px;
+}
+
+
+.school-detail{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 64px 0 0 0;
+}
+
+.school-detail-theme{
+	width: 100px;
+    margin: 0 40px 0 0;
+    text-align: left;
+}
+
+.school-detail-answer{
+	width: 480px;
+    margin: 0 0 24px;
+    text-align: left;
+}
+
+/*contact*/
+.contact-wrapper{
+	max-width: 700px;
+	margin: auto;
+}
+
+.contact{
+	padding: 64px 0 80px;
+}
+
+.contact__subtitle{
+	margin: 0 0 80px;
+}
+
+.contact__epilogue{
+	margin: 0 0 32px;
+}
+
+
+.btn-submit{
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	border: none;
+
+}
+
+.form-inner{
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: center;
+	margin: 0 0 40px;
+}
+
+.form-title{
+	width: 112px;
+	padding: 8px 0 0 0;
+	margin: 0 120px 0 0;
+	text-align: left;
+}
+
+.form-title.check-radio{
+	padding: 0px;
+}
+
+.form-item{
+	width: 410px;
+	margin: 0 0 24px;
+	text-align: justify;
+}
+
+.form-item2{
+	font-size: 14px;
+	margin: 0 0 24px;
+	width: 342px;
+}
+
+.form-parts{
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	box-sizing: border-box;
+	font-size: 16px;
+	width: 80%;
+	padding: 8px;
+	border: solid 1px #bfbfbf;	
+}
+
+input[type*="checkbox"]{
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	border: solid 1px #f0ebe5;
+	width: 24px;
+	height: 24px;
+	margin: 0 40px 24px 0;
+	border-radius: 20%;
+	vertical-align: -31px;
+}
+
+input[type*="checkbox"]:checked{
+	background-color: #f0ebe5;
+}
+
+.form-label{
+	margin: 0 0 24px 0;
+	font-size: 14px;
+	margin: 0 0 24px;
+	width: 400px;
+}
+
+.copyrights{
+	font-size: 18px;
+	color: #fff;
+}
+
+
+
+/*footer*/
+
+.footer{
+	position: relative;
+	background-color: #707070;
+	padding: 32px 0;
+}
+
+
+.icon-up{
+	display: block;
+	color: #fff;
+	font-size: 24px;
+	padding: 10px 0;
+}
+
+.footer .wrapper{
+	position: relative;
+}
+
+.btn-pagetop{
+	position: absolute;
+	top: -92px;
+	right: 0;
+	display: block;
+	width: 60px;
+	height: 60px;
+	border-radius: 0%;
+	background-color: #707070;
+}
+
+
+/*
+---------------------*/
+.text-center{
+	text-align: center;
+}
+
+.hide{
+	color: darkgrey;
+}
+
+
+
+
+
+
+
+
+/*隠しページ用*/
+.happy{
+	color: crimson;
+}
+
+.unhappy{
+	color: blue;
+}
+
+
+@media screen and (max-width:640px){
+	
+
+	/*heater*/
+	.header{
+		position: fixed;
+		top:0;
+		width: 100%;
+		justify-content: start;
+		z-index: 20;
+	}
+
+
+
+	.header__wrapper2{
+		display: block;
+		height: 64px;
+		margin: 20px 0 0;
+	}
+
+	
+	img.header_eyecatch{
+		height: 60%;
+		text-align: left;
+	}
+
+	.navigation{
+		display: none;
+	}
+
+	.hamburger-menu{
+		display: inline;
+		z-index: 20;
+	}
+
+
+	.menu-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    background-color: #efefef;
+	}
+	.menu-btn span,
+	.menu-btn span:before,
+	.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #222222;
+    position: absolute;
+	}
+	.menu-btn span:before {
+    bottom: 8px;
+	}
+	.menu-btn span:after {
+    top: 8px;
+	}
+
+	#menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+#menu-btn-check {
+    display: none;
+}
+	
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 80;
+    background-color: #efefef;
+	opacity: 90%;
+}
+
+.menu-content ul {
+    padding: 70px 10px 0;
+	text-align: center;
+}
+
+.menu-content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+    color:#222222;
+    text-decoration: none;
+    padding: 9px 15px 10px 0;
+    position: relative;
+}
+
+
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;/*leftの値を変更してメニューを画面外へ*/
+    z-index: 80;
+    background-color: #efefef;
+    transition: all 0.5s;/*アニメーション設定*/
+}
+
+#menu-btn-check:checked ~ .menu-content {
+    left: 0;/*メニューを画面内へ*/
+}
+
+
+	/*main*/
+	.main{
+		margin: 64px 0 0;
+		height: 250px;
+	}
+
+	.site-title{
+		font-size: 24px;
+	}
+
+	.site-subtitle{
+		font-size: 16px;
+		white-space: nowrap;
+	}
+
+
+	/*about*/
+	.profile-wrapper{
+		box-sizing: border-box;
+		width: 100%;
+		padding: 0 10px;
+	
+	}
+
+
+	.about{
+		padding: 80px 0 60px;
+	}
+
+	.profile__title{
+		margin: 0 0 24px;
+	}
+
+	.profile__subtitle{
+		margin: 0 0 20px;
+	}
+
+	.profile__eyectach{
+		margin: 0;
+		height: 100px;
+		z-index: 10;
+	}
+
+	/*Course*/
+
+	.wrapper-course{
+		box-sizing: border-box;
+		width: 100%;
+		padding: 0 10px;
+	}
+
+	.course__item{
+		max-width: 100%;
+		padding: 0 16px;
+	}
+
+
+	.course-item2,.course-item1{
+		display: block;
+		position: static;
+		padding: 10px 0 10px;
+	}
+
+	.course-item-img{
+		width: 100%;
+	}
+
+	.course-article,.course-article2{
+		position: static;
+		transform: none;
+	}
+
+	.course__merit{
+		margin: 10px 0 20px;
+		font-size: 20px;
+	}
+
+	.course__epilogue{
+		margin: 0;
+	}
+
+	/*NEWS*/
+	.article{
+		padding: 40px 0;
+	}
+
+	.news__flash{
+		margin: 0 0 40px;
+	}
+
+	.wrapper{
+		box-sizing: border-box;
+		padding: 0 10px;
+	}
+
+	.news__contents{
+		width: 100%;
+		margin: 0 0 40px;
+	}
+
+	.news__flash{
+		display: block;
+	}
+
+	.news__eyectach{
+		margin: 0 0 20px;
+		text-align: center;
+	}
+
+	.news__date{
+		margin: 0 0 20px;
+
+	}
+
+	.btn{
+		width: 100%;
+		font-size: 16px;
+		padding: 10.5px 0;
+	}
+
+	/*ACCESS*/
+
+	.gmap {
+		height: 0;
+		overflow: hidden;
+		padding-bottom: 56.25%;
+		position: relative;
+	}
+
+	.gmap iframe {
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		z-index: 10;
+	}
+
+
+	.school-detail-answer,.school-detail-theme{
+		box-sizing: border-box;
+		text-align: center;
+	}
+
+	.school-detail-theme{
+		margin: 0 0 5px;
+	}
+	
+
+	/*contact*/
+
+	.contact{
+		padding: 40px 0 80px;
+	}
+
+	.contact-wrapper{
+		box-sizing: border-box;
+		width: 100%;
+		padding: 0 10px;
+	}
+
+	.form-inner{
+		display: block;
+		margin: 0 0 50px;
+	}
+
+	.form-title{
+		width: 100%;
+		margin: 0 0 20px;
+		padding: 0;
+
+	}
+
+	.form-item{
+		width: 100%;
+		margin: 0 0 40px;
+	}
+
+
+	input[type*="checkbox"]{
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	border: solid 1px #f0ebe5;
+	width: 24px;
+	height: 24px;
+	margin: 0 20px 12px 0;
+	border-radius: 20%;
+	vertical-align: -31px;
+	}
+
+	.form-parts,.btn-submit{
+		border-radius: 0;
+	}
+
+	/*footer*/
+
+	.footer{
+		padding: 10px 0;
+	}
+
+	.btn-pagetop{
+		display: none;
+	}
+
+	.copyrights{
+		font-size: 8px;
+	}
+
+}
+
+@media screen and (max-width :1140px){
+
+	.header__wrapper2{
+		box-sizing: border-box;
+		padding: 0 10px;
+	}
+
+	
+}
+
+
+今月の予算
+使ったはずのお金
+└（勝ちですカウント×10000）＋（あいこカウント×5000）＋（負けカウント×500）
+残高
